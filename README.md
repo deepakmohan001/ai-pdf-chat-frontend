@@ -1,16 +1,117 @@
-# React + Vite
+# DocuMind AI – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DocuMind AI is an AI-powered PDF Chat Application that allows users to upload PDF documents, process their content, and ask questions using an AI-powered chat interface.
 
-Currently, two official plugins are available:
+This frontend is built using React and Vite, with Tailwind CSS for styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+- React.js
+- Vite
+- JavaScript
+- Tailwind CSS
+- Axios
+- React Router
+- Lucide React
+- Framer Motion
+- React Hot Toast
+- React Markdown
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Interactive dashboard.
+- Upload PDF documents.
+- View uploaded documents.
+- Process PDF documents.
+- Ask questions about PDF content.
+- Display AI-generated answers.
+- View chat history.
+- Clear chat history.
+- Delete uploaded documents.
+- Responsive user interface.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```text
+ai-pdf-chat-frontend/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   │   └── api.js
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .env.example
+├── .gitignore
+├── package.json
+├── index.html
+└── README.md
+```
+
+## Frontend Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/deepakmohan001/ai-pdf-chat-frontend.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd ai-pdf-chat-frontend
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env` file in the project root.
+
+Add your backend API URL:
+
+```env
+VITE_API_BASE_URL=http://127.0.0.1:8000
+```
+
+Make sure the FastAPI backend is running before using the frontend.
+
+### 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The frontend will run at:
+
+http://localhost:5173
+
+## Backend Integration
+
+The frontend communicates with the FastAPI backend using Axios.
+
+Backend repository:
+
+https://github.com/deepakmohan001/ai-pdf-chat-backend
+
+## Project Repositories
+
+- **Frontend:** https://github.com/deepakmohan001/ai-pdf-chat-frontend
+- **Backend:** https://github.com/deepakmohan001/ai-pdf-chat-backend
+
+## Project Status
+
+- Frontend development completed.
+- Integrated with FastAPI backend.
+- PDF upload and document management implemented.
+- AI chat interface implemented.
+- Tested locally.
+
+**Deployment:** Not yet deployed.
