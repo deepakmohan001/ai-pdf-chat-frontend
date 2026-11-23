@@ -21,7 +21,6 @@ import { toast } from "react-hot-toast";
 
 function Chat() {
   const { documentId } = useParams();
-
   const [document, setDocument] = useState(null);
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(true);
