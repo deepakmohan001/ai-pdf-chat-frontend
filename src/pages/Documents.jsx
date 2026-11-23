@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-
 import {
   FileText,
   Upload,
@@ -12,9 +11,7 @@ import {
   X,
   CheckCircle,
 } from "lucide-react";
-
 import { toast } from "react-hot-toast";
-
 import {
   getDocuments,
   uploadDocument,
