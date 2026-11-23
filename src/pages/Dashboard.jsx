@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import {
   FileText,
   Files,
@@ -12,7 +11,6 @@ import {
   Clock,
   FolderOpen,
 } from "lucide-react";
-
 import { getDocuments } from "../services/api";
 
 function Dashboard() {
