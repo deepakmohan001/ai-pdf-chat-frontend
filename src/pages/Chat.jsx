@@ -9,14 +9,12 @@ import {
   Bot,
   Trash2,
 } from "lucide-react";
-
 import {
   getDocuments,
   getChatHistory,
   askQuestion,
   clearChatHistory,
 } from "../services/api";
-
 import { toast } from "react-hot-toast";
 
 function Chat() {
