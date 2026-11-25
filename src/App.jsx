@@ -4,9 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-
 import MainLayout from "./components/layout/MainLayout";
-
 import Dashboard from "./pages/Dashboard";
 import Documents from "./pages/Documents";
 import Chat from "./pages/Chat";
@@ -20,7 +18,6 @@ function App() {
           <Route path="/documents" element={<Documents />} />
           <Route path="/chat/:documentId" element={<Chat />} />
         </Route>
-
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
